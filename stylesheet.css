@@ -1,18 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
+    background-color: #FCF8F6;
+    font-family: 'quicksand';
+}
+.navbar{
+    padding: 0 !important;
+}
+
+.navbar-brand img{
+    padding-left: 20px;
+    height: 60px;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: black;
+    font-weight: 600;
+}
+
+.fa-bars{
+    color:#FF682D;
     background-color: #FCF8F6;
 }
 
-li a{
-    color:black 
+#nav-bar{
+    top:0;
+    position: sticky;
+    z-index: 10;
 }
 
-.navpadd{
-    font-size: 14px;
-    font-weight: 600;
-    word-wrap: break-word;
-    /* padding: 14px 16px; */
-    padding-left: 45%;
+.btn-primary{
+    background-color: #FF682D !important;
+    border: 0;
 }
-.navbar-nav{
-    background-color: green !important;
+
+
+.orange-head{
+    color: #FF682D;
+}
+
+  /* .text-center{
+    padding-top: 10%;
+    padding-left: 10%;
+    line-height: 30px;
+    letter-spacing: 1px;
+     word-wrap: break-word;
+  } */
+
+.card-img-top{
+    width:50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    margin-left: 110px;
+    padding-top: 10px;
 }
