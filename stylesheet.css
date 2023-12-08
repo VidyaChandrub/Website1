@@ -64,3 +64,70 @@ body{
     margin-left: 110px;
     padding-top: 10px;
 }
+
+.testimonial{
+    width:100%;
+    height: 100vh;
+    
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.carousel-item{
+    min-height: 500px;
+    position: relative;
+    
+}
+
+.carousel-img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+}
+
+.carousel-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+
+.carousel-control-prev-icon{
+    background-image: url("./ALTIUS/images/Backward.svg");
+}
+
+.carousel-control-next-icon{
+    background-image: url("./ALTIUS/images/Forward.svg");
+}
+/* .contact{
+    background-color: #FF682D;
+    color:#FCF8F6;
+    flex-direction: row-reverse;
+    max-width: 100%;
+    height: 400px;
+} 
+
+
+
+.image{
+    width:300px;
+    height: 350px;
+    /* padding: 0;
+    margin: 0;
+    
+}  */
+
+.card .btn{
+    background-color: #FCF8F6 !important;
+    color: black;
+    
+}
+
+.card{
+    border-radius: 20px;
+}

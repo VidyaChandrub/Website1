@@ -1,0 +1,44 @@
+.testimonial{
+    width:100%;
+    height: 100vh;
+    background-color: peachpuff;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.carousel-item{
+    min-height: 500px;
+    position: relative;
+    padding-top: 30%;
+    border: 1px solid black;
+    margin-left: 80px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.carousel-img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    border: 2px solid white;
+    
+}
+
+.carousel-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.carousel-control-prev-icon{
+    background-image: url("../images/Backward.svg");
+}
+
+.carousel-control-next-icon{
+    background-image: url("../images/Forward.svg");
+}
