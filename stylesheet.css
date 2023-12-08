@@ -33,8 +33,7 @@ body{
 
 #nav-bar{
     top:0;
-    position: sticky;
-    z-index: 10;
+    
 }
 
 .btn-primary{
@@ -130,4 +129,16 @@ body{
 
 .card{
     border-radius: 20px;
+}
+
+button a{
+    text-decoration: none;
+}
+
+.contact-head{
+    padding-left: 70px;
+}
+
+.button-pad{
+    margin-left: 70px;
 }
