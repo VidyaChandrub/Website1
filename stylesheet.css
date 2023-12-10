@@ -3,19 +3,21 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #FCF8F6;
     font-family: 'quicksand';
+    overflow-x: hidden;
 }
-.navbar{
+/* .navbar{
     padding: 0 !important;
 }
 
 .navbar-brand img{
     padding-left: 20px;
     height: 60px;
-}
+} */
 
 .navbar-nav li{
     padding: 0 10px;
@@ -26,6 +28,9 @@ body{
     font-weight: 600;
 }
 
+ul{
+    list-style-type: none;
+}
 .fa-bars{
     color:#FF682D;
     background-color: #FCF8F6;
@@ -142,3 +147,4 @@ button a{
 .button-pad{
     margin-left: 70px;
 }
+
