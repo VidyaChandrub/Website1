@@ -4,17 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 body{
     background-color: #FCF8F6;
     font-family: 'quicksand';
-    overflow-x: hidden;
-}
-/* .navbar{
-    padding: 0 !important;
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
 }
 
-.navbar-brand img{
+/*.navbar-brand img{
     padding-left: 20px;
     height: 60px;
 } */
@@ -31,14 +31,14 @@ body{
 ul{
     list-style-type: none;
 }
+
 .fa-bars{
     color:#FF682D;
     background-color: #FCF8F6;
 }
 
 #nav-bar{
-    top:0;
-    
+    top:0;  
 }
 
 .btn-primary{
@@ -59,23 +59,20 @@ ul{
      word-wrap: break-word;
   } */
 
-.card-img-top{
+.work-card{
     width:50px;
     height: 50px;
-    display: flex;
+    display: flex;  
     align-items: center;
-    padding-left: 10px;
-    margin-left: 110px;
-    padding-top: 10px;
 }
 
-.testimonial{
+/* .testimonial{
     width:100%;
     height: 100vh;
     
     position: relative;
     padding-bottom: 100px;
-}
+} */
 
 .carousel-item{
     min-height: 500px;
@@ -127,7 +124,7 @@ ul{
 }  */
 
 .card .btn{
-    background-color: #FCF8F6 !important;
+    background-color: white!important;
     color: black;
     
 }
@@ -140,11 +137,38 @@ button a{
     text-decoration: none;
 }
 
-.contact-head{
+/* .contact-head{
     padding-left: 70px;
-}
+} */
 
 .button-pad{
-    margin-left: 70px;
+    margin-left: 100px;
+    margin-top: -70px;
 }
 
+.card{
+    border: 0;
+}
+
+.capabality img{
+    width:100%;
+}
+
+.drpbtn{
+    background-color: #FCF8F6 !important;
+    border:0;
+}
+
+.footer{
+    background-color: black;
+    color: #FCF8F6;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.accordion-button{
+    border-radius: 10px !important;
+}
