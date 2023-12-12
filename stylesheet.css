@@ -172,3 +172,21 @@ a{
 .accordion-button{
     border-radius: 10px !important;
 }
+
+footer{
+    font-size: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .img-fluid{
+        height: 100%;
+        margin-bottom: 0 !important;
+    }
+
+    .carousel-img img{
+        padding-bottom: 20px;
+    }
+    .carousel-img{
+        border: 0;
+    }
+  }
