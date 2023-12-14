@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    
+    font-family: 'Raleway';
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.navbar-nav li{
+    padding: 0 10px;
+}
+
+.navbar-nav li a{
+    color: #FFFFFF;
+}
+
+
+.fa-bars{
+    color:#FFFFFF;
+    background-color: #fcfaf9bd;
+}
+
+p{
+    color:#FFFFFF;
+}
+
+.about{
+    background-color: #010000;
+}
+
+.seed_phras {
+    font-size: 34px;
+   font-family: "Raleway";
+   font-weight: 700;
+   color: transparent;
+   color:#E01C7A;
+}
+
+h2{
+    font-size: 34px;
+   font-family: "Raleway";
+   font-weight: 500;
+   color: transparent;
+}
+
+.btn-outline-secondary{
+    background-color:rgba(237,67,79,1);
+    color: #FFFFFF;
+    border: 0;
+    border-radius: 10%;
+}
+
+.btn-success{
+    text-decoration: none;
+    border: 0;
+}
