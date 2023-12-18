@@ -16,12 +16,24 @@ body{
 
 .navbar-nav li{
     padding: 0 10px;
+    letter-spacing: 2px;
 }
 
 .navbar-nav li a{
     color: #FFFFFF;
 }
+.navbar-nav li a:hover{
+    background-color: #E01C7A;
+    
+}
 
+.navbar-nav li button a:hover{
+    background-color: none;
+}
+
+.btn-success{
+    background-image: linear-gradient(to right, rgba(180,36,125,1),rgba(237,67,79,1));
+}
 .fa-bars{
     color:#FFFFFF;
 }
