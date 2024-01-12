@@ -7,9 +7,35 @@
     
 }
 
+body{
+    overflow-x: hidden !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
 .bg{
     background-color: rgba(27, 24, 45, 1) !important;
     color:white;
-    width: 25%;
-    overflow-x: hidden;
 }
+
+.sidebar-link{
+    text-decoration: none;
+    color:White;
+    
+}
+
+.sidebar-item{
+  list-style: none;
+  font-size: 13px;
+  /* font-weight: 500; */
+  line-height: 40px;
+ gap: 30px;
+}
+
+@media screen and (min-width: 570px) {
+    /* .sidebar-logo{
+        background-image: url("./images/image\ 2.svg");
+        background-repeat: no-repeat;
+    } */
+  }
