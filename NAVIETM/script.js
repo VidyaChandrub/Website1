@@ -23,7 +23,16 @@ $(document).ready(function(){
     $('.sidebar-menu-item.has-dropdown > a, .sidebar-dropdown-menu-item.has-dropdown > a').click(function(e){
         e.preventDefault()
 
+        if(!($(this).parent().hasClass('focused'))){
+            $(this).parent().parent().find('.sidebar-dropdown-menu').slideUp('fast')
+            $(this).parent().parent().find('.has-dropdown').removeClass('focused')
+        }
+
         $(this).next().slideToggle('fast')
         $(this).parent().toggleClass('focused')
+
+        $('.sidebar-toggle').click(function(){
+            
+        })
     })
 })
