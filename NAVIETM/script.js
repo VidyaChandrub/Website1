@@ -32,7 +32,7 @@ $(document).ready(function(){
         $(this).parent().toggleClass('focused')
 
         $('.sidebar-toggle').click(function(){
-            
+            $('.sidebar').toggleClass('collapsed')
         })
     })
 })

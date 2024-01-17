@@ -16,6 +16,7 @@ body{
 .sidebar{
     width:25%;
     overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar.collapsed{
