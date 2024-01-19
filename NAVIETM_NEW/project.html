@@ -49,7 +49,7 @@
                                 <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Under Carriage</a>
                             </li>
                             <li class="sidebar-item">
-                                <a href="#atags" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi"><i class="ri-arrow-right-s-line"></i>Power Unit</a>
+                                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi"><i class="ri-arrow-right-s-line"></i>Power Unit</a>
                                             <ul id="multi" class="sidebar-dropdown collapse ">
                                                 <li class="sidebar-item">
                                                     <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Servo Motor And Junction Box</a>
@@ -81,17 +81,86 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-8 col-lg-8 col-md-8 col-8">
-                        <p class="fw-bold">ATAGS-AY-DFO-PU-00A-040A-A</p>
-                        <p style="color: rgba(27, 24, 45, 1);">Issue Date : 02-11-2023</p>
+                        
                     </div>
                     <div class="col-sm-4 col-lg-4 col-md-4 col-4 text-end">
                         <span class="csdb_lite">CSDB <span class="lite">lite</span></span>
                     </div>
                 </div>
-                <div class="row fs-6 py-4">
-                    <span><span class="atags" id="atags">ATAGS</span><span><i class="ri-arrow-right-s-line fs-5"></i></span>Power Unit</span>
-                </div>
             </div>
+            <div class="container my-3 px-5">
+                <div class="row m-auto px-5 text-center">
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <span class="rounded-circle border border-success py-2 px-3">1</span>
+                        <p class="m-2">Setting</p>   
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <span class="rounded-circle border border-dark py-2 px-3">2</span>
+                        <p class="m-2">Navigation</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-4">
+                        <span class="rounded-circle border border-dark py-2 px-3">3</span>
+                        <p class="m-2">Publish</p>
+                    </div>
+                </div>
+                <div class="container my-3">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-3"></div>
+                        <div class="col-lg-6 col-md-6 col-6 border border-dark py-3">
+                            <form action="/action_page.php">
+                                <div class="form-group">
+                                  <label for="email" class="fw-bold">Company Name</label>
+                                  <input type="text" class="form-control my-3" id="email" placeholder="Enter Project Name">
+                                </div>
+                                <div class="form-group">
+                                  <label for="pwd" class="fw-bold">Name</label>
+                                  <input type="text" class="form-control my-3" id="pwd" placeholder="Enter Project Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="fw-bold">Company Logo</label><br>
+                                    <i class="ri-close-circle-line"></i>
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="email">Email ID</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter Project Name">
+                                  </div>
+                                  <!-- <div class="mb-3">
+                                    <label for="formFile" class="form-label">File Location</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                  </div> -->
+                                  <div class=" input-group">
+                                    <label for="email">File Location</label>
+            
+                                    <input type="text" class="form-control" placeholder="XML file path" aria-label="XML file path" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2">select path</span>
+                                    <br>
+                                    <input type="text" class="form-control" placeholder="image file path" aria-label="image file path" aria-describedby="basic-addon2">
+                                    <span class="input-group-text" id="basic-addon2">select path</span>
+                                  </div>
+                                  <div>(video, pdf, 3D file accepted *)</div>
+                                  <div class="from-group">
+                                    <label for="email">Auto Navigation</label>
+                                    <br>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Enable</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Disable</label>
+                                  </div>
+                                  </div>
+                                  <button type="submit" class="btn btn-light">Cancel</button> 
+                                <button type="submit" class="btn btn-warning">Next</button>
+                              </form>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-3"></div>
+                    </div>
+                </div>
+                
+            </div>
+            
         </div>
     </div>
     <script src="./script.js"></script>

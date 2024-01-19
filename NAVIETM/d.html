@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>  <style>
+    /* Add your styles here */
+    .icon-rotate {
+      transform: rotate(180deg); /* Rotate the icon to 270 degrees */
+    }
+  </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const icon = document.getElementById('myIcon');
+
+      icon.addEventListener('click', function() {
+        // Toggle the 'icon-rotate' class to change the icon rotation
+        icon.classList.toggle('icon-rotate');
+        
+        // Add additional logic here if needed
+      });
+    });
+  </script>
+</head>
+<body>
+  <!-- Replace 'ri-heart-fill' with your desired Remix Icon class -->
+  <i id="myIcon" class="ri-heart-fill"></i>
+
+  <!-- Add your other HTML content here -->
+
+</body>
+</html>
