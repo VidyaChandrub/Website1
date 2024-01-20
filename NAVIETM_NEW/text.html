@@ -1,242 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
-    <link rel="stylesheet" href="./style.css"/>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
 </head>
+
 <body>
-  
+
   <div class="wrapper">
     <aside id="sidebar">
-        <div class="d-flex">
-            <div class="sidebar-logo">
-                <a href="#" class=""><img src="./images/Group 10.svg" class="m-0 p-0 logo"/></a>
-            </div>
-            <button id="toggle-btn" type="button" class="ms-auto py-0" onclick="changeIcon(this)">
-                <i class="ri-arrow-left-s-line" ></i>
-            </button>
-            
+      <div class="d-flex">
+        <div class="sidebar-logo">
+          <a href="#" class=""><img src="./images/Group 10.svg" class="m-0 p-0 logo" /></a>
         </div>
-        <ul class="sidebar-nav">
+        <button id="toggle-btn" type="button" class="ms-auto py-0" onclick="changeIcon(this)">
+          <i class="ri-arrow-left-s-line"></i>
+        </button>
+
+      </div>
+      <ul class="sidebar-nav">
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="ri-dashboard-fill"></i>
+            <span class="">Dashboard</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="./home.html" class="sidebar-link">
+            <i class="ri-home-4-fill"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link has-dropdown collapsed " data-bs-toggle="collapse" data-bs-target="#auth"
+            aria-expanded="false" aria-controls="auth"><i class="ri-arrow-right-s-line" onclick="changeIcon(this)"></i>
+            <span>ATAGS</span></a>
+          <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="sidebar">
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="ri-dashboard-fill"></i>
-                    <span class="">Dashboard</span>
-                </a>
+              <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>System Configuaration</a>
             </li>
             <li class="sidebar-item">
-                <a href="./home.html" class="sidebar-link">
-                    <i class="ri-home-4-fill"></i>
-                    <span>Home</span>
-                </a>
+              <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Upper Carriage</a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link has-dropdown collapsed " data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth"><i class="ri-arrow-right-s-line" onclick="changeIcon(this)"></i>
-                    <span>ATAGS</span></a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="sidebar">
-                        <li class="sidebar-item">
-                            <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>System Configuaration</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Upper Carriage</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Under Carriage</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi"><i class="ri-arrow-right-s-line"></i>Power Unit</a>
-                                        <ul id="multi" class="sidebar-dropdown collapse ">
-                                            <li class="sidebar-item">
-                                                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Servo Motor And Junction Box</a>
-                                            </li>
-                                            <li class="sidebar-item">
-                                                <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Designs And Functions</a>
-                                            </li>
-                                        </ul>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Communication System</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Navigation Sytem</a>
-                        </li>
-                        
-                    </ul>
-                </a>
+              <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Under Carriage</a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
-                    <i class="lni lni-exit-up"></i>
-                    <span>Publish PDF</span>
-                </a>
+              <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi"
+                aria-expanded="false" aria-controls="multi"><i class="ri-arrow-right-s-line"></i>Power Unit</a>
+              <ul id="multi" class="sidebar-dropdown collapse ">
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i
+                      class="ri-arrow-right-s-line"></i>Servo Motor And Junction Box</a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse"
+                    data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i
+                      class="ri-arrow-right-s-line"></i>Designs And Functions</a>
+                </li>
+              </ul>
             </li>
-        </ul>
+            <li class="sidebar-item">
+              <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Communication System</a>
+            </li>
+            <li class="sidebar-item">
+              <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Navigation Sytem</a>
+            </li>
+
+          </ul>
+          </a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">
+            <i class="lni lni-exit-up"></i>
+            <span>Publish PDF</span>
+          </a>
+        </li>
+      </ul>
     </aside>
 
   </div>
-    <div class="main p-3">
-      <div class="container">
-          <div class="row">
-              <div class="col-sm-8 col-lg-8 col-md-8 col-8">
-                  
-              </div>
-              <div class="col-sm-4 col-lg-4 col-md-4 col-4 text-end">
-                  <span class="csdb_lite">CSDB <span class="lite">lite</span></span>
-              </div>
-          </div>
+  <div class="main p-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-lg-8 col-md-8 col-8">
+
+        </div>
+        <div class="col-sm-4 col-lg-4 col-md-4 col-4 text-end">
+          <span class="csdb_lite">CSDB <span class="lite">lite</span></span>
+        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="container-fluid p-2 align-items-center">
-              <div class="d-flex justify-content-around">
-                <button
-                  class="btn border border-success btn-sm rounded-pill"
-                  style="width: 2rem; height: 2rem"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#company1"
-                  aria-expanded="true"
-                  aria-controls="company1"
-                  onclick="stepFunction(event)"
-                >
-                  1
-                </button>
-                <span
-                  class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1"
-                  style="height: 0.1rem"
-                >
-                </span>
-                <button
-                  class="btn border border-success btn-sm rounded-pill"
-                  style="width: 2rem; height: 2rem"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#company2"
-                  aria-expanded="false"
-                  aria-controls="company3"
-                  onclick="stepFunction(event)"
-                >
-                  2
-                </button>
-                <span
-                  class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1"
-                  style="height: 0.1rem"
-                >
-                </span>
-                <button
-                  class="btn border border-success btn-sm rounded-pill"
-                  style="width: 2rem; height: 2rem"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#company3"
-                  aria-expanded="false"
-                  aria-controls="company3"
-                  onclick="stepFunction(event)"
-                >
-                  3
-                </button>
-              
-              </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="container-fluid p-2 align-items-center">
+            <div class="d-flex justify-content-around">
+              <button class="btn border border-success btn-sm rounded-pill" style="width: 2rem; height: 2rem"
+                data-bs-toggle="collapse" data-bs-target="#company1" aria-expanded="true" aria-controls="company1"
+                onclick="stepFunction(event)">
+                1
+              </button>
+              <span class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1" style="height: 0.1rem">
+              </span>
+              <button class="btn border border-success btn-sm rounded-pill" style="width: 2rem; height: 2rem"
+                data-bs-toggle="collapse" data-bs-target="#company2" aria-expanded="false" aria-controls="company3"
+                onclick="stepFunction(event)">
+                2
+              </button>
+              <span class="bg-success w-25 rounded mt-auto mb-auto me-1 ms-1" style="height: 0.1rem">
+              </span>
+              <button class="btn border border-success btn-sm rounded-pill" style="width: 2rem; height: 2rem"
+                data-bs-toggle="collapse" data-bs-target="#company3" aria-expanded="false" aria-controls="company3"
+                onclick="stepFunction(event)">
+                3
+              </button>
+
             </div>
-    
-            <div class="collapse show" id="company1">
-              <div class="display-4">Company 1</div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
-            <div class="collapse" id="company2">
-              <div class="display-4">Company 2</div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
-            <div class="collapse" id="company3">
-              <div class="display-4">Company 3</div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
-            <div class="collapse" id="company4">
-              <div class="display-4">Company 4</div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-                amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.
-              </p>
-            </div>
+          </div>
+
+          <div class="collapse show" id="company1">
+            <div class="display-4">Company 1</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+          <div class="collapse" id="company2">
+            <div class="display-4">Company 2</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+          <div class="collapse" id="company3">
+            <div class="display-4">Company 3</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
+          </div>
+          <div class="collapse" id="company4">
+            <div class="display-4">Company 4</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
+            </p>
           </div>
         </div>
       </div>
-      
-    </div> 
-  
+    </div>
+
+  </div>
+
 
   <script>
-    function myFunction() {
-      var element = document.body;
-      element.dataset.bsTheme =
-        element.dataset.bsTheme == "light" ? "dark" : "light";
-    }
+    // function myFunction() {
+    //   var element = document.body;
+    //   element.dataset.bsTheme =
+    //     element.dataset.bsTheme == "light" ? "dark" : "light";
+    // }
     function stepFunction(event) {
       debugger;
       var element = document.getElementsByClassName("collapse");
@@ -248,16 +224,85 @@
     }
   </script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
     integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <script src="./script.js"></script>
 </body>
+
 </html>
+<div class="container my-3 px-5">
+  <div class="row m-auto px-5 text-center">
+      <div class="col-lg-4 col-md-4 col-4">
+          <span class="rounded-circle border border-success py-2 px-3">1</span>
+          <p class="m-2">Setting</p>   
+      </div>
+      
+      <div class="col-lg-4 col-md-4 col-4">
+          <span class="rounded-circle border border-dark py-2 px-3">2</span>
+          <p class="m-2">Navigation</p>
+      </div>
+      <div class="col-lg-4 col-md-4 col-4">
+          <span class="rounded-circle border border-dark py-2 px-3">3</span>
+          <p class="m-2">Publish</p>
+      </div>
+  </div>
+  <div class="container my-3">
+      <div class="row">
+          <div class="col-lg-3 col-md-3 col-3"></div>
+          <div class="col-lg-6 col-md-6 col-6 border border-dark py-3">
+              <form action="/action_page.php">
+                  <div class="form-group">
+                    <label for="email" class="fw-bold">Company Name</label>
+                    <input type="text" class="form-control my-3" id="email" placeholder="Enter Project Name">
+                  </div>
+                  <div class="form-group">
+                    <label for="pwd" class="fw-bold">Name</label>
+                    <input type="text" class="form-control my-3" id="pwd" placeholder="Enter Project Name">
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="fw-bold">Company Logo</label><br>
+                      <i class="ri-close-circle-line"></i>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Email ID</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter Project Name">
+                    </div>
+                    <!-- <div class="mb-3">
+                      <label for="formFile" class="form-label">File Location</label>
+                      <input class="form-control" type="file" id="formFile">
+                    </div> -->
+                    <div class=" input-group">
+                      <label for="email">File Location</label>
+
+                      <input type="text" class="form-control" placeholder="XML file path" aria-label="XML file path" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2">select path</span>
+                      <br>
+                      <input type="text" class="form-control" placeholder="image file path" aria-label="image file path" aria-describedby="basic-addon2">
+                      <span class="input-group-text" id="basic-addon2">select path</span>
+                    </div>
+                    <div>(video, pdf, 3D file accepted *)</div>
+                    <div class="from-group">
+                      <label for="email">Auto Navigation</label>
+                      <br>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                      <label class="form-check-label" for="inlineRadio1">Enable</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Disable</label>
+                    </div>
+                    </div>
+                    <button type="submit" class="btn btn-light">Cancel</button> 
+                  <button type="submit" class="btn btn-warning">Next</button>
+                </form>
+          </div>
+          <div class="col-lg-3 col-md-3 col-3"></div>
+      </div>
+  </div>
+  
+</div>

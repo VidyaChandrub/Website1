@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 ::after,
 ::before, *{
     margin: 0;
@@ -191,3 +191,8 @@ input[type="radio"]:checked{
     border-color: rgba(255, 188, 14, 1);
     box-shadow: rgba(255, 188, 14, 1);
 }
+
+.border-dashed{
+    border: 1px dashed grey;
+}
+
