@@ -196,3 +196,31 @@ input[type="radio"]:checked{
     border: 1px dashed grey;
 }
 
+input::placeholder {
+    font-family: 'Quicksand';
+    color: rgba(144, 142, 146, 1);
+    /* border: 1px solid rgba(212, 212, 212, 1); */
+  }
+
+  input{
+    height:47px;
+  }
+  .bg-body-tertiary{
+    background-color: white !important;
+  }
+
+  .video_pd {
+    font-size: 12px;
+    font-family: "Inter";
+    font-weight: 300;
+    color: rgba(144, 142, 146, 1);
+    height: 15px;
+}
+
+.form-control .elementor-field-type-upload input[type="file"]{
+    color:blue;
+}
+
+input[type="file"]{
+    color: blue;
+}
