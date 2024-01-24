@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <link rel="stylesheet" href="../Multi-stepper/styles.css">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+.circular-progress{
+    position: relative;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background: conic-gradient(#2cc675 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value i{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+    color: #2cc675;
+}
+
+
+    </style> 
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <div class="sidebar-logo">
+                    <a href="#" class=""><img src="./images/Group 10.svg" class="m-0 p-0 logo"/></a>
+                </div>
+                <button id="toggle-btn" type="button" class="ms-auto py-0" onclick="changeIcon(this)">
+                    <i class="ri-arrow-left-s-line" ></i>
+                </button>
+                
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="ri-dashboard-fill"></i>
+                        <span class="">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./home.html" class="sidebar-link">
+                        <i class="ri-home-4-fill"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed " data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth"><i class="ri-arrow-right-s-line" onclick="changeIcon(this)"></i>
+                        <span>ATAGS</span></a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>System Configuaration</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Upper Carriage</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Under Carriage</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#atags" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi"><i class="ri-arrow-right-s-line"></i>Power Unit</a>
+                                            <ul id="multi" class="sidebar-dropdown collapse ">
+                                                <li class="sidebar-item">
+                                                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Servo Motor And Junction Box</a>
+                                                </li>
+                                                <li class="sidebar-item">
+                                                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Designs And Functions</a>
+                                                </li>
+                                            </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Communication System</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Navigation Sytem</a>
+                            </li>
+                            
+                        </ul>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-exit-up"></i>
+                        <span>Publish PDF</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-8 col-md-8 col-8">
+                        
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4 col-4 text-end">
+                        <span class="csdb_lite">CSDB <span class="lite">lite</span></span>
+                    </div>
+                </div>
+                <div class="row fs-6 py-4">
+                </div>
+            </div>
+            <div class="container text-center m-auto p-5">
+                <div class="row text-center m-auto p-5">
+                    <div class="circular-progress m-auto p-5">
+                        <span class="progress-value text-warning"><i class="ri-check-line"></i></span>
+                    </div>
+                    <span class="text-dark m-auto p-5">Successfully Published</span>
+                </div>
+                
+            </div>  
+        </div>
+    </div>
+    <script>
+         let circularProgress = document.querySelector(".circular-progress"),
+        progressValue = document.querySelector(".progress-value");
+        let progressStartValue = 0,    
+        progressEndValue = 100,    
+        speed = 100;
+    
+            let progress = setInterval(() => {
+            progressStartValue++;
+            progressValue.textContent = `${progressStartValue}%`
+            circularProgress.style.background = `conic-gradient(#2cc675 ${progressStartValue * 3.6}deg, #ededed 0deg)`
+            if(progressStartValue == progressEndValue){
+                clearInterval(progress);
+            }    
+        }, speed);
+    </script>
+    <script src="./script.js"></script>
+    <script src="../Multi-stepper/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

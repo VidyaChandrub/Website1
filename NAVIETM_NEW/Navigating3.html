@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <link rel="stylesheet" href="../Multi-stepper/styles.css">
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font-txt{
+            font-family: 'Quicksand';
+        }
+        .btn-lg{
+           width: 218px;
+           height: 40px;
+           font-size: 14px;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <aside id="sidebar">
+            <div class="d-flex">
+                <div class="sidebar-logo">
+                    <a href="#" class=""><img src="./images/Group 10.svg" class="m-0 p-0 logo"/></a>
+                </div>
+                <button id="toggle-btn" type="button" class="ms-auto py-0" onclick="changeIcon(this)">
+                    <i class="ri-arrow-left-s-line" ></i>
+                </button>
+                
+            </div>
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="ri-dashboard-fill"></i>
+                        <span class="">Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="./home.html" class="sidebar-link">
+                        <i class="ri-home-4-fill"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link has-dropdown collapsed " data-bs-toggle="collapse" data-bs-target="#auth" aria-expanded="false" aria-controls="auth"><i class="ri-arrow-right-s-line" onclick="changeIcon(this)"></i>
+                        <span>ATAGS</span></a>
+                        <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="sidebar">
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>System Configuaration</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Upper Carriage</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Under Carriage</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="#atags" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi" aria-expanded="false" aria-controls="multi"><i class="ri-arrow-right-s-line"></i>Power Unit</a>
+                                            <ul id="multi" class="sidebar-dropdown collapse ">
+                                                <li class="sidebar-item">
+                                                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Servo Motor And Junction Box</a>
+                                                </li>
+                                                <li class="sidebar-item">
+                                                    <a href="#" class="sidebar-link has-dropdown collapsed" data-bs-toggle="collapse" data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two"><i class="ri-arrow-right-s-line"></i>Designs And Functions</a>
+                                                </li>
+                                            </ul>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Communication System</a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a href="" class="sidebar-link"><i class="ri-arrow-right-s-line"></i>Navigation Sytem</a>
+                            </li>
+                            
+                        </ul>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
+                        <i class="lni lni-exit-up"></i>
+                        <span>Publish PDF</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <div class="main p-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-lg-8 col-md-8 col-8">
+                        
+                    </div>
+                    <div class="col-sm-4 col-lg-4 col-md-4 col-4 text-end">
+                        <span class="csdb_lite">CSDB <span class="lite">lite</span></span>
+                    </div>
+                </div>
+                <div class="row fs-6 py-4">
+                </div>
+            </div>
+            <div class="container-fluid mx-auto px-5">
+                <div class="row">
+                    <div class="col-12 col-md-2 col-lg-2"></div>
+                    <div class="col-md-6 col-lg-6 col-12 mx-auto px-5">
+                        <div class="progressbar">
+                            <div class="progress" id="progress"></div>
+                            <div class="progress-step progress-step-active" data-title="Setting"></div>
+                            <div class="progress-step" data-title="Navigation"></div>
+                            <div class="progress-step" data-title="Publish"></div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-2"></div>
+                </div>
+                <div class="row my-5">
+                    <div class="col-12 col-md-2 col-lg-2"></div>
+                    <div class="col-md-6 col-lg-6 col-12 mx-auto px-5">
+                        <div class="form-box font-txt shadow-none p-3 mb-5 bg-body-tertiary rounded">
+                            <div class="mb-4">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold">XML File</label><br>
+                                <button type="submit" class="btn btn-secondary btm-sm">Valid XML File</button>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold mb-3">Type of delivery</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Draft</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">Final</label>
+                                  </div>
+                            </div>
+                            <div class="mb-3">
+                                <button type="button" class="btn btn-outline-light text-dark btn-md">Homepage Template</button>
+                                <button type="button" class="btn btn-outline-secondary text-dark rounded-pill btn-md">Standard Template</button>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold mb-3">Customise Template</label><br>
+                                <img src="./images/Frame 53.svg">
+                                <img src="./images/Frame 54.svg">
+                                <img>
+                            </div>
+                            <p class="video_pd">(video, pdf, 3D file accepted *)</p>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label fw-bold mb-3">File Security</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">Secure</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4">
+                                    <label class="form-check-label" for="inlineRadio4">Unsecured</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12" style="display: flex; align-items: center; justify-content: space-between; font-family: 'Quicksand';">
+                            <button type="submit" class="btn btn-white btn-lg  text-dark"><span>Prev</span></button>
+                            <button type="submit" class="btn btn-warning btn-lg  text-white">Submit</button>
+                            </div>
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-2"></div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="../Multi-stepper/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>

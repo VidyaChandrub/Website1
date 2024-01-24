@@ -48,7 +48,7 @@ input {
   display: flex;
   justify-content: space-between;
   counter-reset: step;
-  margin: 2rem 0 4rem;
+  margin: 1rem 0 2rem;
 }
 
 .progressbar::before,
@@ -99,11 +99,11 @@ input {
 
 /* Form */
 .form {
-  width: clamp(320px, 30%, 430px);
+  /* width: clamp(320px, 30%, 430px);
   margin: 0 auto;
   border: 1px solid #ccc;
   border-radius: 0.35rem;
-  padding: 1.5rem;
+  padding: 1.5rem; */
 }
 
 .form-step {
@@ -173,7 +173,7 @@ input {
   background-color: rgb(221, 220, 220);
 }
 
-.btn{
+.btn-prev-next{
   padding:10px 80px;
 }
 
