@@ -135,7 +135,7 @@
          let circularProgress = document.querySelector(".circular-progress"),
         progressValue = document.querySelector(".progress-value");
         let progressStartValue = 0,    
-        progressEndValue = 67,    
+        progressEndValue = 100,    
         speed = 100;
     
             let progress = setInterval(() => {
@@ -145,7 +145,14 @@
             if(progressStartValue == progressEndValue){
                 clearInterval(progress);
             }    
+            setTimeout(function() {
+    document.getElementsByClassName("progess-value").style.display = "none";
+    document.getElementById("checkmark").style.display = "block";
+    document.body.classList.add("loaded");
+  }, 3000);
         }, speed);
+
+       
     </script>
     <script src="./script.js"></script>
     <script src="../Multi-stepper/script.js"></script>

@@ -11,31 +11,44 @@
     <link rel="stylesheet" href="./style.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-.circular-progress{
-    position: relative;
-    height: 170px;
-    width: 170px;
-    border-radius: 50%;
-    background: conic-gradient(#2cc675 3.6deg, #ededed 0deg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.circular-progress::before{
-    content: "";
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background-color: #fff;
-}
-.progress-value i{
-    position: relative;
-    font-size: 30px;
-    font-weight: 600;
-    color: #2cc675;
+        .loader-container {
+  position: relative;
 }
 
+.loader, .checkmark {
+  display: none;
+}
+
+.loader {
+  border: 8px solid #3498db;
+  border-radius: 50%;
+  border-top: 8px solid #ffffff;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #27ae60;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loaded .loader {
+  display: none;
+}
+
+.loaded .checkmark {
+  display: block;
+}
 
     </style> 
     <title>Document</title>
@@ -122,9 +135,10 @@
             </div>
             <div class="container text-center m-auto p-5">
                 <div class="row text-center m-auto p-5">
-                    <div class="circular-progress m-auto p-5">
-                        <span class="progress-value text-warning"><i class="ri-check-line"></i></span>
-                    </div>
+                    <div class="loader-container">
+                        <div class="loader" id="loader">0%</div>
+                        <div class="checkmark" id="checkmark">&#10003;</div>
+                      </div>
                     <span class="text-dark m-auto p-5">Successfully Published</span>
                 </div>
                 
@@ -132,20 +146,14 @@
         </div>
     </div>
     <script>
-         let circularProgress = document.querySelector(".circular-progress"),
-        progressValue = document.querySelector(".progress-value");
-        let progressStartValue = 0,    
-        progressEndValue = 100,    
-        speed = 100;
-    
-            let progress = setInterval(() => {
-            progressStartValue++;
-            progressValue.textContent = `${progressStartValue}%`
-            circularProgress.style.background = `conic-gradient(#2cc675 ${progressStartValue * 3.6}deg, #ededed 0deg)`
-            if(progressStartValue == progressEndValue){
-                clearInterval(progress);
-            }    
-        }, speed);
+      document.addEventListener("DOMContentLoaded", function() {
+  // Simulate loading completion after 3 seconds
+  setTimeout(function() {
+    document.getElementById("loader").style.display = "none";
+    document.getElementById("checkmark").style.display = "block";
+    document.body.classList.add("loaded");
+  }, 3000);
+});
     </script>
     <script src="./script.js"></script>
     <script src="../Multi-stepper/script.js"></script>
