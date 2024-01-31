@@ -1,0 +1,37 @@
+<svg width="1317" height="927" viewBox="0 0 1317 927" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_65_943)">
+<g filter="url(#filter0_f_65_943)">
+<path d="M672.764 870.505L0 927V0H561L760.977 744.928C777.138 805.132 734.881 865.288 672.764 870.505Z" fill="url(#paint0_linear_65_943)" fill-opacity="0.6"/>
+</g>
+<circle cx="26" cy="610" r="5" fill="#E9EBEF"/>
+<circle cx="77" cy="610" r="5" fill="#E9EBEF"/>
+<circle cx="77" cy="667" r="5" fill="#E9EBEF"/>
+<circle cx="60" cy="667" r="5" fill="#E9EBEF"/>
+<circle cx="43" cy="667" r="5" fill="#E9EBEF"/>
+<circle cx="26" cy="667" r="5" fill="#E9EBEF"/>
+<circle cx="77" cy="648" r="5" fill="#E9EBEF"/>
+<circle cx="60" cy="648" r="5" fill="#E9EBEF"/>
+<circle cx="43" cy="648" r="5" fill="#E9EBEF"/>
+<circle cx="26" cy="648" r="5" fill="#E9EBEF"/>
+<circle cx="77" cy="629" r="5" fill="#E9EBEF"/>
+<circle cx="60" cy="629" r="5" fill="#E9EBEF"/>
+<circle cx="43" cy="629" r="5" fill="#E9EBEF"/>
+<circle cx="26" cy="629" r="5" fill="#E9EBEF"/>
+<circle cx="60" cy="610" r="5" fill="#E9EBEF"/>
+<circle cx="43" cy="610" r="5" fill="#E9EBEF"/>
+</g>
+<defs>
+<filter id="filter0_f_65_943" x="-100" y="-100" width="964.44" height="1127" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_65_943"/>
+</filter>
+<linearGradient id="paint0_linear_65_943" x1="379" y1="927" x2="379" y2="0" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F1F1F1"/>
+<stop offset="1" stop-color="#F1F1F1" stop-opacity="0"/>
+</linearGradient>
+<clipPath id="clip0_65_943">
+<rect width="1317" height="927" fill="white"/>
+</clipPath>
+</defs>
+</svg>
