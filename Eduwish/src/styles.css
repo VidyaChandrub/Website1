@@ -10,6 +10,8 @@
 body{
     font-family: 'Poppins' !important;
     overflow-x: hidden;
+    max-width: 100% !important;
+    width: 100% !important;
 }
 
 .btn-primary{
@@ -26,6 +28,7 @@ body{
 .navbar{
   padding: 0;
 }
+
 .font-robot{
   font-family: "Roboto Flex" !important;
 }
@@ -76,16 +79,17 @@ p{
   }
 
 .card {
-    margin: 0 0.5rem;
+    margin: 0 1rem;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
+
   }
 
   .carousel-control-prev,
   .carousel-control-next {
-    background-color: whitesmoke;
-    width: 6vh;
-    height: 6vh;
+    background-color: white !important;
+    width: 7vh;
+    height: 7vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -111,26 +115,85 @@ p{
   .card img {
       max-height: 100%;
   }
-  @media (max-width: 767px) {
-    .card .img-wrapper {
-      /* height: 17em; */
-    }
+
+  .btn-prev{
+    background-color: white;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-40px, 80px);
   }
 
-  /* .carousel-control-prev-icon{
-    background-image: url('../images/arrow-left.svg');
-    width: 15px;
-    height: 15px;
+  .btn-next{
+    background-color: white;
+    width: 7vh;
+    height: 7vh;
+    border-radius: 50%;
+    top: 70%;
+    left:50%;
+    transform: translate(30px, 80px);
   }
 
-  .carousel-control-next-icon{
-    background-image: url('../images/arrow-right.svg');
-    width: 15px;
-    height: 15px;
+  .card .img-wrapper .img1 {
+    max-width: 80%;
+    /* height: 13em; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img .img1{
+    max-height: 80%;
+}
+
+@media (max-width: 412px) {
+  /* .carousel-item {
+    margin-right: 0;
+    flex: 0 0 calc(100%/1);
+    display: block;
+    
+  }
+  .carousel-inner {
+    display: flex;
   } */
 
+  .card1{
+    height: 100%;
+    /* width: 240px; */
+  }
+
+  .btn-prev{
+    background-color: white;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50px, 80px);
+  }
+
+  .btn-next{
+    background-color: white;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 70%;
+    left:50%;
+    transform: translate(20px, 80px);
+  }
+
+}
+
+  /* .card1{
+    height: 262px;
+    /* width: 240px; 
+  } */
+
+  /* .card-text{
+    font-size: 12px !important;
+  }   */
   .bg-grey{
-   
    background-image: url(../images/bg-grey.svg);
   }
 
@@ -173,6 +236,14 @@ p{
   background-color: #f8f9fa;
 }
 
+.accordion-button:focus{
+  border-color: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: #f8f9fa;
+}
  .footer-left i{
   color:rgba(150, 151, 152, 1);
   border:2px solid rgba(233, 233, 233, 1);
@@ -191,9 +262,109 @@ p{
   opacity: 0.1;
 }
 
-@media screen and (max-width: 700px) {
+.btn-mobile{
+  display: none !important;
+}
+
+@media  (min-width: 412px){
+  .margin{
+    margin-top: 10px !important;
+    padding: 0 !important;
+  }
+
+  .padding_mobile{
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .mobile_find{
+    padding: 0px 10px 30px !important;
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 768px){
+/* @media screen and (max-width: 768px ) */
+  body{
+    max-width: 100% !important;
+    width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .header_mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    margin: auto;
+    padding-top: 10px;
+    position: sticky !important;
+  }
+
+  .btn-mobile{
+    display: grid !important;
+    gap: 10px !important;
+    font-size: xx-small !important;
+  }
+  .footer{
+    display: none;
+    
+  }
+
+  .btns{
+    display: none;
+    gap: 10px;
+    /* margin: auto; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+  }
+  
+
+  .navbar-toggler{
+    margin-left: auto;
+    border: 0 !important;
+  }
+
+  .Home-page{
+    padding-top: 30px !important;
+  }
+
+  .margin{
+    margin-top: 0px !important;
+    /* padding: 50px !important; */
+  }
+
+  .padding_mobile{
+    padding-left: 20px !important;
+    padding-right: 10px !important;
+  }
+
+  .mobile_view_promise_module{
+    padding-top: 20px !important;
+  }
+
+  .mobile_find{
+    padding: 0px 0px 30px !important;
+  }
+  .find_eduwis{
+   padding-top: 10px !important;
+   margin:auto !important;
+  }
+
+  .module_overview{
+    margin: auto !important;
+  }
+
   .footer{
     display: none;
   }
 
-}
+  .footer_mobile{
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+
+  }
+
+  .accordian_mobile{
+    padding: 10px !important;
+  }
+  }
