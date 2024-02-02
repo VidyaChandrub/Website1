@@ -73,10 +73,10 @@
             </div>
     </div>
         
-    <div class="container bg">
-        <div class="text-white text-center p-5">
-            <h5 class="padding_mobile">Digitize Your School Minutes With Our Integrated Platform</h5>
-            <form class="row gy-2 gx-2 align-items-center my-5 px-5 margin">
+    <div class="container-fluid bg">
+        <div class="text-white  container text-center py-5">
+            <h5 class="">Digitize Your School Minutes With Our Integrated Platform</h5>
+            <form class="row gy-2 gx-2 align-items-center my-5 ">
                 <div class="col-lg-auto col-md-6 col-sm-12">
                   <input type="text" class="form-control px-5" id="inputPassword2" placeholder="Your Name">
                 </div>
@@ -93,17 +93,17 @@
         </div>
     </div>
 
-    <div class="bg-body-tertiary">
+    <div class="container-fluid bg-body-tertiary">
         <div class="container">
             <div class="row m-auto ">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
                     <div class="mobile_view_promise_module">
-                        <h5 class="fw-bold h1-height">Our Promises</h5>
+                        <h5 class="fw-bold ">Our Promises</h5>
                     </div>
                     <div class="h2-height">
-                        <h2 class="eduwis fw-bold h2-height">Why Choose Us?</h2>
+                        <h2 class="eduwis fw-bold h1-height">Why Choose Us?</h2>
                     </div>
-                    <div class="h2-height">
+                    <div class="">
                         <p>Explore the next era in school management with Eduwis. We 
                             unveil a comprehensive set of robust features designed for 
                             smooth administration and enriched learning experiences. 
@@ -128,7 +128,7 @@
         <div id="carouselExampleControls" class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <div class="card">
+                    <div class="card card1">
                         <div class="img-wrapper"><img src="../images/card_one.svg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h6 class="card-title">Significant reduction in <br>workforce cost</h6>
@@ -136,7 +136,8 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card">
+            <div class="carousel-inner">
+                    <div class="card  card1">
                         <div class="img-wrapper"><img src="../images/card-two.svg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h6 class="card-title">Heighten Data Security<br><span class="text-white">hi</span></h6>
@@ -145,7 +146,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card">
+                    <div class="card card1">
                         <div class="img-wrapper"><img src="../images/card-three.svg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h6 class="card-title">Build By Academician By<br>  Academician</h6>
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <div class="card">
+                    <div class="card card1">
                         <div class="img-wrapper"><img src="../images/card-four.svg" class="d-block w-100" alt="..."> </div>
                         <div class="card-body">
                             <h6 class="card-title">Customisable and user friendly dashboard</h6>
@@ -234,118 +235,552 @@
             <h5 class="fw-bold pt-5 pb-3">Module Overview</h5>
             <p class="pb-3">Comprehensive ERP Modules with role-based portal benefits, user-friendly 
                 dashboards and customization reports</p>
-            <div class="d-flex gap-2 justify-content-center row module_overview">
-                <button href="#carouselExampleControls1" class="btn btn-primary rounded-pill pills text-white col-lg-2 col-sm-12" type="submit">Academics</button>
-                <button href="#carouselExampleControls1" class="btn btn-secondary rounded-pill pills col-lg-2 col-sm-12" type="submit">Adminastration</button>
-                <button href="#" class="btn btn-secondary rounded-pill pills col-lg-2 col-sm-12" type="submit">Finance</button>
-                <button href="#" class="btn btn-secondary rounded-pill pills col-lg-2 col-sm-12" type="submit">Human Resource</button>
-                <button href="#" class="btn btn-secondary rounded-pill pills col-lg-2 col-sm-12" type="submit">Communication</button>
-            </div> 
-
-            <div class="row text-start">
-                <div id="carouselExampleControls1" class="carousel my-5 pb-5">
-                  <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <div class="card py-4 card1" >
-                              <div class="img-wrapper "><img src="../images/Examination.svg" class="d-block w-100 img1" alt="..."> </div>
-                              <div class="card-body m-auto">
-                                  <p class="h1-height px-3 card-text">Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management.</p>
+                <div class="row m-auto">
+                    <div class="col-lg-12 col-sm-12 col-12">
+                        <ul class="nav nav-pills nav-fill mobile-nav" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active rounded-pill mx-auto" id="pills-Academics-tab" data-bs-toggle="pill" data-bs-target="#pills-Academics" type="button" role="tab" aria-controls="pills-Academics" aria-selected="true">Academics</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link rounded-pill m-auto" id="pills-Adminastration-tab" data-bs-toggle="pill" data-bs-target="#pills-Adminastration" type="button" role="tab" aria-controls="pills-Adminastration" aria-selected="false">Adminastration</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link rounded-pill px-2" id="pills-Finance-tab" data-bs-toggle="pill" data-bs-target="#pills-Finance" type="button" role="tab" aria-controls="pills-Finance" aria-selected="false">Finance</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link rounded-pill px-2" id="pills-Resourc-tab" data-bs-toggle="pill" data-bs-target="#pills-Resourc" type="button" role="tab" aria-controls="pills-Resourc" aria-selected="false">Human Resource</button>
+                              </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link rounded-pill" id="pills-Communication-tab" data-bs-toggle="pill" data-bs-target="#pills-Communication" type="button" role="tab" aria-controls="pills-Communication" aria-selected="false">Communication</button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active blue-tab" id="pills-Academics" role="tabpanel" aria-labelledby="pills-Academics-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row text-start">
+                                <div id="carouselExampleControls1" class="carousel my-5 pb-5">
+                                  <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <div class="card py-4 card1" >
+                                              <div class="img-wrapper "><img src="../images/Examination.svg" class="d-block w-100 img1" alt="..."> </div>
+                                              <div class="card-body m-auto">
+                                                  <p class=" px-3 card-text">Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper "><img src="../images/Lesson_plan.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class=" px-3 card-text">Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper"><img src="../images/Homework.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Assign, track, and manage homework assignments, promoting a systematic approach to learning.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper"><img src="../images/Attandance.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                       <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 5</h5>
+                                                 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 6</h5>
+                                                 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 7</h5>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 8</h5>
+                                              
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 9</h5>
+                                              
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 9</h5>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <i class="ri-arrow-left-line text-dark m-auto"></i>
+                                      <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      
+                                      <i class="ri-arrow-right-line text-dark m-auto"></i>
+                                      <span class="visually-hidden">Next</span>
+                                  </button> -->
                               </div>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="card card1 py-4">
-                          <div class="img-wrapper "><img src="../images/Lesson_plan.svg" class="d-block w-100 img1" alt="..."> </div>
-                          <div class="card-body m-auto">
-                              <p class="h1-height px-3 card-text">Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators.</p>
-                          </div>
-                      </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="card card1 py-4">
-                          <div class="img-wrapper"><img src="../images/Homework.svg" class="d-block w-100 img1" alt="..."> </div>
-                          <div class="card-body m-auto">
-                              <p class="h1-height px-3 card-text">Assign, track, and manage homework assignments, promoting a systematic approach to learning.</p>
-                          </div>
-                      </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div class="card card1 py-4">
-                          <div class="img-wrapper"><img src="../images/Attandance.svg" class="d-block w-100 img1" alt="..."> </div>
-                          <div class="card-body m-auto">
-                              <p class="h1-height px-3 card-text">Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability.</p>
-                          </div>
-                      </div>
-                      </div>
-                       <div class="carousel-item">
-                          <div class="card">
-                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                              <div class="card-body">
-                                  <h5 class="card-title">Card title 5</h5>
-                                 
                               </div>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="card">
-                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                              <div class="card-body">
-                                  <h5 class="card-title">Card title 6</h5>
-                                 
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Adminastration" role="tabpanel" aria-labelledby="pills-Adminastration-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row text-start">
+                                <div id="carouselExampleControls1" class="carousel my-5 pb-5">
+                                  <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <div class="card py-4 card1" >
+                                              <div class="img-wrapper "><img src="../images/Examination.svg" class="d-block w-100 img1" alt="..."> </div>
+                                              <div class="card-body m-auto">
+                                                  <p class="px-3 card-text">Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper "><img src="../images/Lesson_plan.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper"><img src="../images/Homework.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Assign, track, and manage homework assignments, promoting a systematic approach to learning.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper"><img src="../images/Attandance.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                       <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 5</h5>
+                                                 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 6</h5>
+                                                 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 7</h5>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 8</h5>
+                                              
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 9</h5>
+                                              
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 9</h5>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <i class="ri-arrow-left-line text-dark m-auto"></i>
+                                      <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      
+                                      <i class="ri-arrow-right-line text-dark m-auto"></i>
+                                      <span class="visually-hidden">Next</span>
+                                  </button> -->
                               </div>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="card">
-                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                              <div class="card-body">
-                                  <h5 class="card-title">Card title 7</h5>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Finance" role="tabpanel" aria-labelledby="pills-Finance-tab" tabindex="0">
+                        <div class="container">
+                            <div class="row text-start">
+                                <div id="carouselExampleControls1" class="carousel my-5 pb-5">
+                                  <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <div class="card py-4 card1" >
+                                              <div class="img-wrapper "><img src="../images/Examination.svg" class="d-block w-100 img1" alt="..."> </div>
+                                              <div class="card-body m-auto">
+                                                  <p class="px-3 card-text">Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management.</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper "><img src="../images/Lesson_plan.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper"><img src="../images/Homework.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Assign, track, and manage homework assignments, promoting a systematic approach to learning.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                        <div class="card card1 py-4">
+                                          <div class="img-wrapper"><img src="../images/Attandance.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability.</p>
+                                          </div>
+                                      </div>
+                                      </div>
+                                       <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 5</h5>
+                                                 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 6</h5>
+                                                 
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 7</h5>
+                                                  
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 8</h5>
+                                              
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 9</h5>
+                                              
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                          <div class="card">
+                                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                              <div class="card-body">
+                                                  <h5 class="card-title">Card title 9</h5>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!-- <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                      <i class="ri-arrow-left-line text-dark m-auto"></i>
+                                      <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                      
+                                      <i class="ri-arrow-right-line text-dark m-auto"></i>
+                                      <span class="visually-hidden">Next</span>
+                                  </button> -->
+                              </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-Resourc" role="tabpanel" aria-labelledby="pills-Resourc-tab" tabindex="0"><div class="container">
+                        <div class="row text-start">
+                            <div id="carouselExampleControls1" class="carousel my-5 pb-5">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <div class="card py-4 card1" >
+                                          <div class="img-wrapper "><img src="../images/Examination.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card card1 py-4">
+                                      <div class="img-wrapper "><img src="../images/Lesson_plan.svg" class="d-block w-100 img1" alt="..."> </div>
+                                      <div class="card-body m-auto">
+                                          <p class="px-3 card-text">Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators.</p>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card card1 py-4">
+                                      <div class="img-wrapper"><img src="../images/Homework.svg" class="d-block w-100 img1" alt="..."> </div>
+                                      <div class="card-body m-auto">
+                                          <p class="px-3 card-text">Assign, track, and manage homework assignments, promoting a systematic approach to learning.</p>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card card1 py-4">
+                                      <div class="img-wrapper"><img src="../images/Attandance.svg" class="d-block w-100 img1" alt="..."> </div>
+                                      <div class="card-body m-auto">
+                                          <p class="px-3 card-text">Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability.</p>
+                                      </div>
+                                  </div>
+                                  </div>
+                                   <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 5</h5>
+                                             
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 6</h5>
+                                             
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 7</h5>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 8</h5>
+                                          
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 9</h5>
+                                          
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 9</h5>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!-- <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <i class="ri-arrow-left-line text-dark m-auto"></i>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
                                   
-                              </div>
+                                  <i class="ri-arrow-right-line text-dark m-auto"></i>
+                                  <span class="visually-hidden">Next</span>
+                              </button> -->
                           </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="card">
-                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                              <div class="card-body">
-                                  <h5 class="card-title">Card title 8</h5>
-                              
-                              </div>
                           </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="card">
-                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                              <div class="card-body">
-                                  <h5 class="card-title">Card title 9</h5>
-                              
+                    </div></div>
+                    <div class="tab-pane fade" id="pills-Communication" role="tabpanel" aria-labelledby="pills-Communication-tab" tabindex="0"><div class="container">
+                        <div class="row text-start">
+                            <div id="carouselExampleControls1" class="carousel my-5 pb-5">
+                              <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                      <div class="card py-4 card1" >
+                                          <div class="img-wrapper "><img src="../images/Examination.svg" class="d-block w-100 img1" alt="..."> </div>
+                                          <div class="card-body m-auto">
+                                              <p class="px-3 card-text">Streamline exam processes, from scheduling to result generation, ensuring efficient assessment management.</p>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card card1 py-4">
+                                      <div class="img-wrapper "><img src="../images/Lesson_plan.svg" class="d-block w-100 img1" alt="..."> </div>
+                                      <div class="card-body m-auto">
+                                          <p class="px-3 card-text">Plan and organize lessons systematically, creating a structured and engaging curriculum plans for educators.</p>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card card1 py-4">
+                                      <div class="img-wrapper"><img src="../images/Homework.svg" class="d-block w-100 img1" alt="..."> </div>
+                                      <div class="card-body m-auto">
+                                          <p class="px-3 card-text">Assign, track, and manage homework assignments, promoting a systematic approach to learning.</p>
+                                      </div>
+                                  </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                    <div class="card card1 py-4">
+                                      <div class="img-wrapper"><img src="../images/Attandance.svg" class="d-block w-100 img1" alt="..."> </div>
+                                      <div class="card-body m-auto">
+                                          <p class="px-3 card-text">Monitor and manage student attendance effortlessly, fostering a culture of punctuality and accountability.</p>
+                                      </div>
+                                   </div>
+                                  </div>
+                                  <!-- <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 5</h5>
+                                             
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 6</h5>
+                                             
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 7</h5>
+                                              
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 8</h5>
+                                          
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 9</h5>
+                                          
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="carousel-item">
+                                      <div class="card">
+                                          <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
+                                          <div class="card-body">
+                                              <h5 class="card-title">Card title 9</h5>
+                                          </div>
+                                      </div>
+                                  </div> -->
                               </div>
+                              <!-- <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                  <i class="ri-arrow-left-line text-dark m-auto"></i>
+                                  <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                  
+                                  <i class="ri-arrow-right-line text-dark m-auto"></i>
+                                  <span class="visually-hidden">Next</span>
+                              </button> -->
                           </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div class="card">
-                              <div class="img-wrapper"><img src="..." class="d-block w-100" alt="..."> </div>
-                              <div class="card-body">
-                                  <h5 class="card-title">Card title 9</h5>
-                              </div>
                           </div>
-                      </div>
+                    </div></div>
+            
                   </div>
-                  <button class="carousel-control-prev btn-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                      <i class="ri-arrow-left-line text-dark m-auto"></i>
-                      <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next btn-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                      
-                      <i class="ri-arrow-right-line text-dark m-auto"></i>
-                      <span class="visually-hidden">Next</span>
-                  </button>
-              </div>
-              </div>
         </div>
     </div>
 
-    <div class="bg-body-tertiary bg-grid ">
+    <div class="container-fluid bg-grid ">
         <div class="container">
             <div class="row d-flex justify-content-end">
                 <img src="../images/Group 153.svg" class=" float-end m-5" style="width:77px; height:77px;"/>
@@ -353,63 +788,71 @@
             <div class="row m-auto">
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
                     <div class="">
-                        <h5 class="fw-bold h1-height">About Eduwis</h5>
+                        <h5 class="fw-bold">About Eduwis</h5>
                     </div>
-                    <div class="h1-height">
-                        <h2 class="eduwis fw-bold h1-height">Transforming Education with Innovative ERP Solutions</h2>
+                    <div class="">
+                        <h2 class="eduwis h1-height fw-bold">Transforming Education<br> with Innovative ERP<br> Solutions</h2>
                     </div>
-                    <div class="h2-height">
+                    <div class="">
                         <p>At Eduwis, we believe in the power of education to shape a brighter future. 
                             Established with a vision to revolutionize the educational landscape, Eduwis is 
                             a leading provider of cutting-edge ERP solutions for schools.
                             As we continue to evolve, Eduwis remains focused on adapting to the ever￾changing educational landscape. Discover the Eduwis advantage — where 
-                            education meets innovation.</p>
-                            
+                            education meets innovation.</p>        
                     </div>
-                    <div class="h2-height btns">
-                        <button class="btn btn-warning fw-medium" type="submit">Our Origin</button>
-                        <button class="btn btn-outline-secondary fw-medium text-dark" type="submit">Our Core Team</button>
-                        <button class="btn btn-outline-secondary fw-medium text-dark" type="submit">Our Commitment</button>
-                    </div><br>  
-                    <div class="h2-height pb-5">
-                        <!-- <span><img src="../images/Group 153.svg"/></span> -->
-                        <p>Eduwis emerged from a passion for advancing educational processes through technology. Understanding the evolving needs of modern 
+                    
+                    <ul class="nav nav-pills mb-3 py-3" id="pills-tab2" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Our Origin</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Our Core Team</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Our Commitment</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content mb-5" id="pills-tabContent">
+                        <div class="tab-pane fade show active warning-tab" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0"><p>Eduwis emerged from a passion for advancing educational processes through technology. Understanding the evolving needs of modern 
                             educational institutions, we set out to create a comprehensive ERP 
                             solution that streamlines administration, enhances teaching 
-                            methodologies, and empowers student learning.</p>
-                    </div>                        
+                            methodologies, and empowers student learning.</p></div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">...</div>
+                      </div>
+                                            
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 col-12 m-auto">
-                    <img src="../images/about_eduwis.svg" class="rounded mx-auto my-5 d-block img-fluid"/>
+                    <img src="../images/about_eduwis.svg" class="rounded mb-5 mx-auto my-5 d-block img-fluid"/>
                 </div>
             </div>
         </div>   
     </div>
 
-    <div class="bg-blue">
+    <div class="container-fluid bg-blue">
         <div class="container">
             <div class="row m-auto">
                 <div class="col-lg-4 cl-md-4 col-6 me-auto pt-5 find_eduwis">
                     <img src="../images/mobile.svg" class="img-fluid mt-5 pt-5 me-auto"/>
                 </div>
-                <div class="col-lg-6 col-md-6 col-12 my-auto p-5 mobile_find ">
-                    <h2 class="h1-height text-white fw-bold font-robot pt-5">Discover the EDUWIS Advantage – Where Education Meets Innovation</h2>
-                    <p style="color: rgba(255, 255, 255, 1) !important;" class="h2-height">EDUWIS Mobile App ensures that almost all the necessary work related to
+                <div class="col-lg-8 col-md-8 col-12 my-auto ms-auto p-5 mobile_find ">
+                    <h2 class="h1-height text-white fw-bold  pt-5">Discover the <span class="text-warning">EDUWIS</span> Advantage </h2><p class="text-white fs-3 h1-height">Where Education Meets Innovation</p>
+                    <p style="color: rgba(255, 255, 255, 1) !important;" class="h2-height">EDUWIS Mobile App ensures that almost all the necessary work related to<br>
                             school is done from anywhere and anytime with just a tap away.</p>
-                    <div class="d-flex gap-2 ">
+                    <div class="d-flex gap-2 h1-height mt-5">
                         <img src="../images/google_play.svg" class=""/>
                         <img src="../images/app-store.svg" class=""/>
                     </div>
                     
                 </div>
-                <div class="col-lg-2 cl-md-2 "></div>
+                
             </div>
         </div>
     </div>
 
-    <div class="bg-body-tertiary">
-        <div class="container text-center m-auto ">
-            <h5 class="fw-bold pt-5 pb-3">FAQ</h5>
+    <div class="container-fluid bg-body-tertiary">
+        <div class="container text-center p-5 accordian_mobile">
+            <h5 class="fw-bold pt-5">FAQ</h5>
             <div class="h2-height">
                 <h2 class="eduwis fw-bold h1-height">Have Any Query?</h2>
             </div>
@@ -482,38 +925,38 @@
             </div>
     </div>
 
-    <div class="bg-white">
-        <div class="container text-center m-auto p-5">
-            <h5 class="fw-bold pb-3">Read Blog</h5>
+    <div class="container-fluid bg-white">
+        <div class="container text-center  p-5">
+            <h5 class="fw-bold pt-5">Read Blog</h5>
             <div class="h2-height">
                 <h2 class="eduwis fw-bold h1-height">Stay Informed On Our Latest News</h2>
             </div>
-            <div class="row my-auto  py-5 text-start">
+            <div class="row  py-5 text-start">
                 <div class="col-md-4 col-lg-4 col-sm-12 my-3">
-                    <div class="card" >
+                    <div class="card card_read" style="width:320px;" >
                         <img src="../images/read-blog-1.svg" class="card-img-top" alt="..." >
                         <div class="card-body ">
-                            <h6 class="card-title h1-height">How to Choose the best Digital Marketing Agency</h6>
+                            <h6 class="card-title fw-semibold lh-base">How to Choose the best Digital Marketing Agency</h6>
                             <p class="card-subtitle mb-2 text-body-secondary">23 Jan 2023</p>
                           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                         </div>
                     </div>
                 </div> 
                 <div class="col-md-4 col-lg-4 col-sm-12 my-3">
-                    <div class="card">
+                    <div class="card card_read" style="width:320px;">
                         <img src="../images/read-blog-2.svg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title h1-height">How to Choose the best Digital Marketing Agency</h6>
+                            <h6 class="card-title lh-base fw-semibold">How to Choose the best Digital Marketing Agency</h6>
                             <p class="card-subtitle mb-2 text-body-secondary">23 Jan 2023</p>
                           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                         </div>
                     </div>
                 </div> 
                 <div class="col-md-4 col-lg-4 col-sm-12 my-3">
-                    <div class="card" >
+                    <div class="card card_read" style="width:320px;">
                         <img src="../images/read-blog-3.svg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h6 class="card-title h1-height">How to Choose the best Digital Marketing Agency</h6>
+                            <h6 class="card-title lh-base fw-semibold">How to Choose the best Digital Marketing Agency</h6>
                             <p class="card-subtitle mb-2 text-body-secondary">23 Jan 2023</p>
                           <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
                         </div>

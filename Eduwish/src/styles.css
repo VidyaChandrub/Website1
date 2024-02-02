@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"); */
 *{
     margin: 0;
     padding: 0;
@@ -29,24 +30,22 @@ body{
   padding: 0;
 }
 
-.font-robot{
+/* .font-robot{
   font-family: "Roboto Flex" !important;
-}
+} */
 
 .eduwis{
     color: rgba(2, 57, 199, 1) !important; 
-    font-family: "Roboto Flex" !important;
+    
 }
 
 .h1-height{
-    line-height: 1.6 !important;
+  line-height: 63px !important;
 }
 
-.h2-height{
-    line-height: 2 !important;
-}
 p{
     font-size: 14px !important;
+    line-height: 25px !important;
 }
 
 .navbar-toggler{
@@ -55,7 +54,7 @@ p{
 
 .bg{
     background-image: url('../images/bg-form.svg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     /* background-attachment:fixed;
     background-position: 100% 100%; */
     width: 100% !important;
@@ -94,6 +93,23 @@ p{
     top: 50%;
     transform: translateY(-50%);
   }
+
+
+  /* Module overview */
+
+  .bg-grey .nav-pills .nav-link{
+    color: black !important;
+    background-color: rgba(242, 242, 242, 1);
+    border: 0;
+}
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: white !important;
+    background-color: rgba(2, 57, 199, 1) !important;
+}
+
+  /* Module overview */
+
 
   @media (min-width: 768px) {
     .carousel-item {
@@ -148,20 +164,7 @@ p{
 }
 
 @media (max-width: 412px) {
-  /* .carousel-item {
-    margin-right: 0;
-    flex: 0 0 calc(100%/1);
-    display: block;
-    
-  }
-  .carousel-inner {
-    display: flex;
-  } */
-
-  .card1{
-    height: 100%;
-    /* width: 240px; */
-  }
+ 
 
   .btn-prev{
     background-color: white;
@@ -185,16 +188,16 @@ p{
 
 }
 
-  /* .card1{
+  .card1{
     height: 262px;
-    /* width: 240px; 
-  } */
+   width: 240px; 
+  }
 
   /* .card-text{
     font-size: 12px !important;
   }   */
   .bg-grey{
-   background-image: url(../images/bg-grey.svg);
+   background-image: url(../images/bg-grey.svg) !important;
   }
 
   .btn-secondary{
@@ -216,12 +219,13 @@ p{
 } 
 
 .accordion-button::after{
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16"><path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>')
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 16L6 10H18L12 16Z"></path></svg>')
 }
 
 .accordion-button:not(.collapsed)::after{
- background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16"><path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/></svg>');
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='currentColor'%3E%3Cpath d='M12 8L18 14H6L12 8Z'%3E%3C/path%3E%3C/svg%3E");
  rotate: 180deg;
+ color: blue !important;
 }
 
 .accordion-button {
@@ -266,21 +270,26 @@ p{
   display: none !important;
 }
 
+
 @media  (min-width: 412px){
   .margin{
-    margin-top: 10px !important;
-    padding: 0 !important;
+    margin-top: 0px !important;
+    padding: 0px !important;
   }
 
   .padding_mobile{
     padding: 0 !important;
-    margin: 0 !important;
+    
   }
 
   .mobile_find{
     padding: 0px 10px 30px !important;
+    margin: auto !important;
+    
   }
+
 }
+
 @media screen and (min-width: 412px) and (max-width: 768px){
 /* @media screen and (max-width: 768px ) */
   body{
@@ -317,33 +326,39 @@ p{
     padding-bottom: 10px;
     
   }
+  .card1{
+    height: auto;
+    width: auto;
+    margin: auto;
+  }
   
-
+  
   .navbar-toggler{
     margin-left: auto;
     border: 0 !important;
   }
-
+  #pills-tab{
+    display: grid !important;
+    row-gap: 2px !important;
+  }
+  #pills-tab2{
+    display: grid !important;
+    row-gap: 2px !important;
+  }
   .Home-page{
     padding-top: 30px !important;
   }
-
-  .margin{
-    margin-top: 0px !important;
-    /* padding: 50px !important; */
-  }
-
-  .padding_mobile{
-    padding-left: 20px !important;
-    padding-right: 10px !important;
-  }
-
+  
   .mobile_view_promise_module{
     padding-top: 20px !important;
   }
 
   .mobile_find{
-    padding: 0px 0px 30px !important;
+    padding: 0px 10px 30px !important;
+  }
+
+  .card_read{
+    width: auto !important;
   }
   .find_eduwis{
    padding-top: 10px !important;
@@ -368,3 +383,10 @@ p{
     padding: 10px !important;
   }
   }
+
+
+  /* NEW CHANGES */
+
+  /* About eduwish */
+
+  /* About eduwish */
