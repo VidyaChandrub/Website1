@@ -40,7 +40,7 @@ body{
 }
 
 .h1-height{
-  line-height: 63px !important;
+  line-height: 55px !important;
 }
 
 p{
@@ -81,7 +81,6 @@ p{
     margin: 0 1rem;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
-
   }
 
   .carousel-control-prev,
@@ -96,20 +95,40 @@ p{
 
 
   /* Module overview */
+  .nav-link{
+    background: none;
+  }
 
-  .bg-grey .nav-pills .nav-link{
+ .blue-pills  .blue-links{
     color: black !important;
-    background-color: rgba(242, 242, 242, 1);
+    background-color: rgba(242, 242, 242, 1) !important;
     border: 0;
+    /* width: 165px !important;
+    height: 50px; */
 }
 
-  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  .blue-pills .blue-links.active, .blue-pills .show>.blue-links {
     color: white !important;
     background-color: rgba(2, 57, 199, 1) !important;
 }
 
   /* Module overview */
 
+  /* About Eduwis */
+  .warning-pills  .warning-links{
+    color: black !important;
+    background-color: transparent !important;
+    border: 1px solid black !important;
+    margin: 2px !important;
+}
+
+  .warning-pills .warning-links.active, .warning-pills .show>.warning-links {
+    color: black !important;
+    background-color: #ffc107 !important;
+    border: 0 !important;
+}
+
+   /* About Eduwis */
 
   @media (min-width: 768px) {
     .carousel-item {
@@ -132,25 +151,6 @@ p{
       max-height: 100%;
   }
 
-  .btn-prev{
-    background-color: white;
-    width: 7vh;
-    height: 7vh;
-    border-radius: 50%;
-    top: 70%;
-    left: 50%;
-    transform: translate(-40px, 80px);
-  }
-
-  .btn-next{
-    background-color: white;
-    width: 7vh;
-    height: 7vh;
-    border-radius: 50%;
-    top: 70%;
-    left:50%;
-    transform: translate(30px, 80px);
-  }
 
   .card .img-wrapper .img1 {
     max-width: 80%;
@@ -326,10 +326,11 @@ p{
     padding-bottom: 10px;
     
   }
+  
   .card1{
     height: auto;
     width: auto;
-    margin: auto;
+    margin-top: 20px !important;
   }
   
   
@@ -345,6 +346,7 @@ p{
     display: grid !important;
     row-gap: 2px !important;
   }
+
   .Home-page{
     padding-top: 30px !important;
   }
@@ -382,11 +384,35 @@ p{
   .accordian_mobile{
     padding: 10px !important;
   }
+
+  .mobile-nav{
+    padding: 0px !important;
+  }
   }
 
 
   /* NEW CHANGES */
 
-  /* About eduwish */
+/* 
+.intro{
+      height: 70px !important;
+      width: 250px !important;
+      padding: 6px !important;
+      box-sizing: border-box;
+      position: absolute !important;
+      background: rgb(27, 27, 27, .5) !important;
+      color: white !important;
+      bottom: 240px !important;
+}
+  
+.card:hover .intro{
+    height: 220px !important;
+    bottom: 240px !important;
+    background-color: white !important;
+    color: black !important;
+}
 
-  /* About eduwish */
+.card:hover h6{
+  opacity: 1;
+  visibility: visible;
+} */
