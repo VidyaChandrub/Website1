@@ -78,7 +78,7 @@ p{
   }
 
 .card {
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
     border: none;
   }
@@ -130,6 +130,48 @@ p{
 
    /* About Eduwis */
 
+   /* Our Promises */
+
+.hide_text{
+    visibility: hidden;
+}
+
+#Card_Text{
+    position: absolute;
+    bottom: -140px;
+    transition: 0.2s;
+    color: white;
+    /* height: 60px; */
+}
+
+#card_Hover{
+    cursor: pointer;
+}
+
+#card_Hover:hover #Card_Text {
+    bottom: -10px;
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(2, 57, 199, 1);
+    border-radius: 10px;    
+    font-size: 10px !important;       
+}
+
+#card_Hover:hover .card-text{
+    visibility: visible !important;
+    font-size: 12px !important;
+}
+
+img{
+    transition: 0.2s;
+}
+
+#card_Hover:hover img{
+    transform: scale(1.0);
+}
+
+ /* Our Promises */
+
   @media (min-width: 768px) {
     .carousel-item {
       margin-right: 0;
@@ -163,30 +205,6 @@ p{
     max-height: 80%;
 }
 
-@media (max-width: 412px) {
- 
-
-  .btn-prev{
-    background-color: white;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50px, 80px);
-  }
-
-  .btn-next{
-    background-color: white;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 70%;
-    left:50%;
-    transform: translate(20px, 80px);
-  }
-
-}
 
   .card1{
     height: 262px;
@@ -288,6 +306,15 @@ p{
     
   }
 
+  /* #Card_Text{
+    position: absolute;
+    bottom: -180px !important;
+    transition: 0.2s;
+    color: white;
+    height: 100% !important;
+} */
+
+
 }
 
 @media screen and (min-width: 412px) and (max-width: 768px){
@@ -388,31 +415,34 @@ p{
   .mobile-nav{
     padding: 0px !important;
   }
+
+  /* new changes */
+  #Card_Text{
+    position: absolute;
+    bottom: -200px !important;
+    transition: 0.2s;
+    color: white;
+    height: 100% !important;
+    /* height: 60px; */
+}
+
+#card_Hover:hover #Card_Text {
+    bottom: 0px !important;
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(2, 57, 199, 1);
+    border-radius: 10px;           
+}
+
+#card_Hover:hover .hide-text{
+    visibility: visible !important;
+    font-size: 16px !important;
+    text-align: center !important;
+}
+
+
   }
 
 
   /* NEW CHANGES */
 
-/* 
-.intro{
-      height: 70px !important;
-      width: 250px !important;
-      padding: 6px !important;
-      box-sizing: border-box;
-      position: absolute !important;
-      background: rgb(27, 27, 27, .5) !important;
-      color: white !important;
-      bottom: 240px !important;
-}
-  
-.card:hover .intro{
-    height: 220px !important;
-    bottom: 240px !important;
-    background-color: white !important;
-    color: black !important;
-}
-
-.card:hover h6{
-  opacity: 1;
-  visibility: visible;
-} */
