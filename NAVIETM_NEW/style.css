@@ -72,7 +72,7 @@ body{
     margin: auto 0; 
     padding: 4px;
     transform: rotate('180deg');
-    
+    transform: rotate('180deg');
 }
 
 #toggle-btn i{
