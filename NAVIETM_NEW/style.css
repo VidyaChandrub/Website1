@@ -244,9 +244,7 @@ i{
     
   }
 
-  /* input[type="file"]{
-    visibility: hidden;
-} */
+
   
 .btn-outline-secondary{
     border-color: rgba(212, 212, 212, 1);
@@ -271,23 +269,3 @@ i{
     flex-direction: column;
 }
 
-/* .step-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--prm-gray);
-    transition: .4s;
-  }
-  
-  .step-button[aria-expanded="false"] {
-    width: 60px;
-    height: 60px;
-    border-color:rgba(144, 142, 146, 1);
-    color: #fff;
-  }
-
-  .step-item {
-    z-index: 10;
-    text-align: center;
-  } */
